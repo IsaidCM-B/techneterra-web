@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Techneterra Official Brand Colors (AgenciaAgro Brand Guide) */
+  --color-sky-brand: #3b8dc0;
+  --color-sky-light: #5ba3d1;
+  --color-sky-dark: #2a6d99;
+  --color-green-brand: #75a74d;
+  --color-green-light: #8fbd67;
+  --color-green-dark: #5d8a3b;
+
+  /* Neutral palette */
+  --color-slate-950: #0f172a;
+  --color-slate-800: #1e293b;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-400: #94a3b8;
+  --color-slate-200: #e2e8f0;
+  --color-slate-100: #f1f5f9;
+  --color-slate-50: #f8fafc;
+  --color-white: #ffffff;
+  --color-neutral-900: #0f172a;
+
+  /* Primary CTA = brand (no amber/orange as brand color) */
+  --color-cta: #3b8dc0;
+  --color-cta-hover: #2a6d99;
+  /* Form feedback only — not brand accents */
+  --color-success: #16a34a;
+  --color-error: #dc2626;
+
+  /* Typography */
+  --font-sans: 'Source Sans 3', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Source Sans 3', 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Spacing scale */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+}
+
+/* Official logotype fonts — add .ttf files under /fonts/ (see docs/branding/fonts/) */
+@font-face {
+  font-family: "Handel Gothic";
+  src: url("/fonts/HandelGothic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("/fonts/Sansation-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("/fonts/Sansation-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("/fonts/Sansation-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-slate-800);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-slate-950);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-sky-brand);
+  color: var(--color-white);
+}

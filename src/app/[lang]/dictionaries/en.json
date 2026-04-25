@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "title": "Techneterra — Evolving Today",
+    "description": "Autonomous agricultural robotics. Precision spraying with AI, LiDAR navigation, and electrostatic technology. Made in Mexico, built for the world."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "technology": "Technology",
+    "caseStudies": "Case Studies",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Evolving Today",
+    "headline": "Precision. Autonomy. Results.",
+    "subtitle": "Autonomous robotic sprayers for specialty crops — electrostatic technology and AI-guided navigation that maximizes input coverage, canopy penetration, and field productivity.",
+    "cta": "Request a Demo",
+    "ctaSecondary": "View Products"
+  },
+  "values": {
+    "title": "Why Techneterra",
+    "items": [
+      {
+        "title": "Unmatched Precision",
+        "desc": "GPS + LiDAR navigation with ±5 cm accuracy. Every pass is logged, every nozzle optimized — your inputs land exactly where they need to."
+      },
+      {
+        "title": "Maximum Coverage",
+        "desc": "Electrostatic application wraps droplets around leaves and stems for complete canopy coverage — ensuring your inputs perform at their full potential on every application."
+      },
+      {
+        "title": "Field Efficiency",
+        "desc": "One operator supervises multiple robots covering 7–9 acres/hour with 6–8 hours of continuous autonomous operation."
+      },
+      {
+        "title": "Smart Investment",
+        "desc": "Cost-effective platform with most operators achieving ROI in 1–3 years. Reduces labor dependency by up to 75% while improving application consistency."
+      }
+    ]
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "At Techneterra, we believe technology should empower farmers of all sizes. Our mission is to deliver precision agricultural robots that maximize the performance of every input, drive field productivity, and give growers the data they need to operate at their best.",
+    "vision": "To be the foremost driver of agricultural innovation — trusted allies of growers, agronomists, and the input industry worldwide.",
+    "stat1": { "value": "7–9", "label": "Acres/hour coverage" },
+    "stat2": { "value": "80%", "label": "Productivity boost" },
+    "stat3": { "value": "6-8h", "label": "Continuous runtime" },
+    "stat4": { "value": "5+", "label": "Years of innovation" }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Autonomous sprayers designed for specialty crops",
+    "ttr300": {
+      "name": "TTR-300E",
+      "tagline": "Compact Greenhouse Sprayer",
+      "desc": "Specially built for greenhouse cultivation, optimizing spraying for tomatoes, cucumbers, lettuce, flowers, and more. Compact, fully electric design for tight spaces.",
+      "specs": {
+        "tank": "300L capacity",
+        "power": "Full electric",
+        "design": "Compact greenhouse form",
+        "nav": "Autonomous + manual operation"
+      }
+    },
+    "ttr500e": {
+      "name": "TTR-500E",
+      "tagline": "Autonomous Electric Field Sprayer (FLAGSHIP)",
+      "desc": "Our flagship autonomous sprayer — 28 kW full electric, no diesel engine. Modular payload: spray, weed control, or cargo transport.",
+      "specs": {
+        "chassis": "28 kW electric · 900 kg · 2280×1300×1380 mm",
+        "tank": "500 L high-pressure + 30 L self-clean",
+        "spray": "14 kW pump · 1–3 MPa (145–435 PSI) · 63 L/min",
+        "nav": "DGPS + LiDAR · ±5 cm precision",
+        "runtime": "6–8 h continuous · 1 h fast charge",
+        "coverage": "7–9 acres/hour",
+        "slope": "Up to 25° slopes",
+        "env": "IPX7 water resistance"
+      }
+    },
+    "ttr1000h": {
+      "name": "TTR-1000H",
+      "tagline": "Hybrid Multifunction",
+      "desc": "Large-scale hybrid platform — 1000 L capacity for commercial operations that need extended range and multifunction tooling.",
+      "specs": {
+        "tank": "1000 L",
+        "power": "Hybrid (details per configuration)",
+        "target": "Large-scale commercial fields"
+      }
+    },
+    "ttr2000h": {
+      "name": "TTR-2000H",
+      "tagline": "Industrial Hybrid",
+      "desc": "Industrial-class hybrid platform for heavy acreage and demanding duty cycles.",
+      "specs": {
+        "tank": "Large capacity (configuration-dependent)",
+        "power": "Hybrid industrial",
+        "target": "Industrial agricultural operations"
+      }
+    },
+    "agristatic": {
+      "name": "AgriStatic",
+      "tagline": "Backpack Electrostatic",
+      "desc": "Entry-level electrostatic sprayer — 15–20 L tank, 21 V battery. Accessible precision for spot treatment and small plots.",
+      "specs": {
+        "tank": "15–20 L",
+        "power": "21 V battery",
+        "target": "Entry-level · smallholders · spot spray"
+      }
+    },
+    "cta": "Request Specifications",
+    "learnMore": "Learn More"
+  },
+  "platform": {
+    "title": "The TechneTerra Platform",
+    "subtitle": "Beyond robotics — a complete digital infrastructure for sustainable, traceable, and verifiable agriculture.",
+    "items": [
+      {
+        "badge": "Live",
+        "title": "Blockchain Oracles",
+        "desc": "Every spray event, GPS coordinate, input volume, and crop outcome is written to an immutable ledger. Auditable records for regulatory compliance, buyer verification, and export certification.",
+        "detail": "SHA-256 chained entries · DGPS timestamped · GlobalG.A.P. / Eurepgap compatible"
+      },
+      {
+        "badge": "Live",
+        "title": "Crop Software Integration",
+        "desc": "Native connectors to agronomic platforms — Farm Management Info Systems, ERP, and advisory tools. Operational data flows in; precision spray plans and audit logs flow out.",
+        "detail": "REST API · Webhook events · PDF / Excel audit exports"
+      },
+      {
+        "badge": "Live",
+        "title": "IoT Energy & Traceability",
+        "desc": "An AGIOT sensor mesh across the farm captures solar yield, battery cycles, water consumption, and microclimate data in real time. Every kWh, liter, and GPS point is tracked for full resource traceability.",
+        "detail": "AGIOT sensor network · MQTT telemetry · energy & input dashboard"
+      },
+      {
+        "badge": "Coming Soon",
+        "title": "Green Bond Integration",
+        "desc": "Verified field data feeds directly into carbon credit and green bond reporting frameworks — enabling growers to access sustainability financing instruments backed by real, auditable operational evidence.",
+        "detail": "VCS / Gold Standard compatible · MRV reporting · investor-ready audit trail"
+      }
+    ]
+  },
+  "technology": {
+    "title": "Our Technology",
+    "subtitle": "Built on proven robotics and AI research",
+    "items": [
+      {
+        "title": "Electrostatic Spraying",
+        "desc": "Charged droplets wrap around leaves and stems for complete coverage. Maximizes canopy penetration while minimizing waste."
+      },
+      {
+        "title": "Autonomous Navigation",
+        "desc": "GPS + LiDAR with +/-5cm precision. Multi-sensor fusion technology overcomes dense canopy limitations."
+      },
+      {
+        "title": "ROS2 safety framework (internal)",
+        "desc": "Internal ROS2 software layers for E-stop, watchdog, and geofence logic — engineering roadmap toward certification; not sold as a certified commercial safety package until qualified."
+      },
+      {
+        "title": "Adaptive Spraying",
+        "desc": "Adjustable nozzles via app. Modify spray rates based on canopy density, tree height, and terrain conditions."
+      }
+    ]
+  },
+  "caseStudy": {
+    "title": "Field Proven Results",
+    "client": "Golden Valley Berries, California",
+    "desc": "High-density raspberry production optimized with autonomous TTR-500E units — Layout Brief case study metrics.",
+    "cta": "Read case study",
+    "metrics": [
+      { "value": "+23%", "label": "Input efficiency" },
+      { "value": "-75%", "label": "Labor requirements" },
+      { "value": "+9%", "label": "Grade A crop quality" },
+      { "value": "0", "label": "Chemical exposure cases" }
+    ]
+  },
+  "about": {
+    "title": "About Techneterra",
+    "intro": "We build autonomous agricultural robotics in Mexico for global markets — electric-first platforms, electrostatic precision, and field-proven software.",
+    "workstreamsTitle": "Executive focus areas (public summary)",
+    "workstreams": [
+      "Product & field validation",
+      "Manufacturing & supply chain",
+      "US market readiness",
+      "Safety & compliance roadmap",
+      "Customer success (incl. Driscoll's programs)",
+      "Brand & digital experience (AgenciaAgro)",
+      "Finance & investor readiness"
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Notice",
+    "updated": "2026",
+    "blocks": [
+      "Effective date: 08/10/2024 (TDPSA).",
+      "Data controller: TechneTerra Technologies, LLC. Address: 5900 Balcones Dr Ste 21333, Austin, TX 78731-4257. Contact: info@techneterra.com.",
+      "Primary purposes: identify/authenticate customers and users; respond to inquiries; personalize service; maintain internal records; process quotes, orders, invoices, payments, and deliveries; contact you regarding products and services; internal quality and service optimization.",
+      "Secondary purposes may include marketing promotions, surveys, behavioral/statistical analysis, and offering products/services from TechneTerra or affiliated companies. You may opt out of secondary purposes without affecting core services.",
+      "We do not sell your personal data. Data may be shared with trusted providers (marketing/analytics), legal/tax authorities where required by law, and affiliates/partners for service optimization."
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to see what Techneterra can do for your operation?",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "cropType": "Crop Type",
+      "message": "Tell us about your operation"
+    },
+    "cta": "Request a Demo",
+    "info": {
+      "email": "info@techneterra.com",
+      "phone": "+1 (713) 913-3022",
+      "address": "5900 Balcones Dr STE 21333, Austin, TX 78731"
+    }
+  },
+  "footer": {
+    "tagline": "Partner with Techneterra",
+    "desc": "Let's work together to shape the future of sustainable farming.",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "products": "Products",
+      "technology": "Technology",
+      "caseStudies": "Case Studies",
+      "contact": "Contact",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "© 2026 TechneTerra Technologies, LLC. All rights reserved.",
+    "parent": "5900 Balcones Dr Ste 21333, Austin, TX 78731-4257 · info@techneterra.com"
+  }
+}

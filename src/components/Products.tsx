@@ -62,7 +62,7 @@ export default function Products({ dict, lang }: ProductsProps) {
                 {dict.products.ttr500e.desc}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8">
-                {Object.entries(dict.products.ttr500e.specs).slice(0, 6).map(([key, value]) => (
+                {Object.entries(dict.products.ttr500e.specs).map(([key, value]) => (
                   <div key={key} className="flex items-start gap-2 text-sm">
                     <svg className="w-4 h-4 text-[#75a74d] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -88,18 +88,15 @@ export default function Products({ dict, lang }: ProductsProps) {
               </div>
             </div>
 
-            {/* Right: spec highlights */}
-            <div className="relative min-h-[300px] md:min-h-0 flex items-center justify-center bg-gradient-to-br from-[#1a3a6a]/40 to-[#0d1e3c]/60 p-8 lg:p-12">
-              <div className="w-full max-w-sm space-y-3">
-                {Object.entries(dict.products.ttr500e.specs).slice(4).map(([key, value]) => (
-                  <div key={key} className="flex items-start gap-3 text-sm bg-white/5 rounded-lg px-4 py-2.5">
-                    <svg className="w-4 h-4 text-[#8ec96a] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="text-slate-200">{value}</span>
-                  </div>
-                ))}
-              </div>
+            {/* Right: TTR robot illustration */}
+            <div className="relative min-h-[280px] md:min-h-0 flex items-center justify-center bg-gradient-to-br from-[#0a1628]/60 to-[#1a3a6a]/40 p-8">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/figma/38e73dd1f72e_324x225.png"
+                alt="TTR autonomous robot"
+                className="w-full max-w-sm h-auto object-contain drop-shadow-2xl"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -109,13 +106,13 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* TTR-300E */}
           <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow bg-slate-50 flex flex-col">
-            <div className="w-full h-48 overflow-hidden">
+            {/* Figma illustration: green tractor in field */}
+            <div className="w-full h-48 overflow-hidden bg-gradient-to-br from-[#e8f0e0] to-[#d4e8c8]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/brand/figma/fef085557201_4050x675.png"
+                src="/brand/figma/3cb3bd602d08_324x225.png"
                 alt="TTR-300E in the field"
-                className="w-full h-full object-cover"
-                style={{ objectPosition: '20% center' }}
+                className="w-full h-full object-cover object-center"
                 loading="lazy"
               />
             </div>
@@ -134,17 +131,24 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* AgriStatic™ */}
           <div className="rounded-2xl overflow-hidden border border-[#75a74d]/20 shadow-sm hover:shadow-md transition-shadow bg-white flex flex-col">
-            <div className="bg-gradient-to-br from-[#75a74d]/10 to-[#1a6eb5]/10 h-48 flex items-center justify-center p-8">
+            {/* Figma: spray coverage card in vegetation */}
+            <div className="w-full h-48 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/brand/figma/64608da82037_3734x787.png"
-                alt="AgriStatic™ Spray Coverage Optimizer"
-                className="max-h-16 w-auto"
+                src="/brand/figma/d3ec0198abbe_310x388.png"
+                alt="Electrostatic spray coverage"
+                className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
             </div>
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="text-xl font-black mb-1">{dict.products.agristatic.name}™</h3>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/figma/64608da82037_3734x787.png"
+                alt="AgriStatic™"
+                className="h-7 w-auto mb-2"
+                loading="lazy"
+              />
               <p className="text-[#75a74d] font-semibold text-sm mb-3">{dict.products.agristatic.tagline}</p>
               <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">{dict.products.agristatic.desc}</p>
               <Link
@@ -158,17 +162,24 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* AGIOT Digital Farming */}
           <div className="rounded-2xl overflow-hidden border border-[#3b8dc0]/20 shadow-sm hover:shadow-md transition-shadow bg-white flex flex-col">
-            <div className="bg-gradient-to-br from-[#3b8dc0]/10 to-[#75a74d]/10 h-48 flex items-center justify-center p-8">
+            {/* Figma: field scene with wind turbines */}
+            <div className="w-full h-48 overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/brand/figma/9b4d396545f3_2072x837.png"
-                alt="AGIOT Digital Farming Platform"
-                className="max-h-20 w-auto"
+                src="/brand/figma/1a4a9c3e2d8e_438x338.png"
+                alt="AGIOT connected farming"
+                className="w-full h-full object-cover object-top"
                 loading="lazy"
               />
             </div>
             <div className="p-6 flex flex-col flex-1">
-              <h3 className="text-xl font-black mb-1">AGIOT</h3>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand/figma/9b4d396545f3_2072x837.png"
+                alt="AGIOT Digital Farming"
+                className="h-7 w-auto mb-2"
+                loading="lazy"
+              />
               <p className="text-[#3b8dc0] font-semibold text-sm mb-3">Digital Farming Platform</p>
               <p className="text-slate-600 text-sm leading-relaxed mb-4 flex-1">
                 IoT sensors, fleet telemetry, and AI-powered agronomic insights — connected farm management from a single dashboard.

@@ -4,14 +4,6 @@ import { notFound } from 'next/navigation'
 
 const PRODUCT_KEYS = ['ttr300', 'ttr500e', 'ttr1000h', 'ttr2000h', 'agristatic'] as const
 
-const productImages: Record<(typeof PRODUCT_KEYS)[number], string> = {
-  ttr300: '/brand/photos/99a8b1e4-e0ef-43da-a6b5-94ad0523fdad.jpg',
-  ttr500e: '/brand/photos/7ad1829f-8132-424e-ae08-e1717487fe41.jpg',
-  ttr1000h: '/brand/photos/9086a0cb-2403-4816-81fc-0f118318c3b2.jpg',
-  ttr2000h: '/brand/photos/abc914c0-6788-47ad-a782-3ce13e7fda23.jpg',
-  agristatic: '/brand/photos/1be2a06e-956b-4af4-ad1e-53fc6dcad694.jpg',
-}
-
 export default async function ProductsPage({
   params,
 }: {
@@ -42,13 +34,6 @@ export default async function ProductsPage({
                 key={key}
                 className="rounded-2xl border border-neutral-200 p-8 shadow-sm hover:shadow-md transition-shadow bg-neutral-50/50"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={productImages[key]}
-                  alt={card.name}
-                  className="w-full h-52 object-cover rounded-xl border border-neutral-200 mb-6"
-                  loading="lazy"
-                />
                 <h2 className="text-2xl font-bold text-[#3b8dc0] mb-1">{card.name}</h2>
                 <p className="text-sm font-semibold text-[#75a74d] mb-4">{card.tagline}</p>
                 <p className="text-neutral-700 mb-6">{card.desc}</p>

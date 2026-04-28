@@ -45,8 +45,8 @@ export default function Products({ dict, lang }: ProductsProps) {
 
         {/* Flagship TTR-500E — wide card */}
         <div className="mb-8 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#0d1e3c] to-[#1a3a6a] text-white">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            {/* Left: copy */}
+          <div className="grid grid-cols-1">
+            {/* Copy */}
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <span className="inline-flex items-center gap-2 text-[#8ec96a] text-xs font-bold tracking-widest uppercase mb-3">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#8ec96a] animate-pulse" />
@@ -64,7 +64,7 @@ export default function Products({ dict, lang }: ProductsProps) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-8">
                 {Object.entries(dict.products.ttr500e.specs).map(([key, value]) => (
                   <div key={key} className="flex items-start gap-2 text-sm">
-                    <svg className="w-4 h-4 text-[#75a74d] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-4 h-4 text-[#8ec96a] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-slate-300">{value}</span>
@@ -88,16 +88,6 @@ export default function Products({ dict, lang }: ProductsProps) {
               </div>
             </div>
 
-            {/* Right: TTR robot illustration */}
-            <div className="relative min-h-[280px] md:min-h-0 flex items-center justify-center bg-gradient-to-br from-[#0a1628]/60 to-[#1a3a6a]/40 p-8">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand/figma/38e73dd1f72e_324x225.png"
-                alt="TTR autonomous robot"
-                className="w-full max-w-sm h-auto object-contain drop-shadow-2xl"
-                loading="lazy"
-              />
-            </div>
           </div>
         </div>
 
@@ -106,16 +96,6 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* TTR-300E */}
           <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow bg-slate-50 flex flex-col">
-            {/* Figma illustration: green tractor in field */}
-            <div className="w-full h-48 overflow-hidden bg-gradient-to-br from-[#e8f0e0] to-[#d4e8c8]">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand/figma/3cb3bd602d08_324x225.png"
-                alt="TTR-300E in the field"
-                className="w-full h-full object-cover object-center"
-                loading="lazy"
-              />
-            </div>
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-xl font-black mb-1">{dict.products.ttr300.name}</h3>
               <p className="text-[#3b8dc0] font-semibold text-sm mb-3">{dict.products.ttr300.tagline}</p>
@@ -131,16 +111,6 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* AgriStatic™ */}
           <div className="rounded-2xl overflow-hidden border border-[#75a74d]/20 shadow-sm hover:shadow-md transition-shadow bg-white flex flex-col">
-            {/* Figma: spray coverage card in vegetation */}
-            <div className="w-full h-48 overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand/figma/d3ec0198abbe_310x388.png"
-                alt="Electrostatic spray coverage"
-                className="w-full h-full object-cover object-top"
-                loading="lazy"
-              />
-            </div>
             <div className="p-6 flex flex-col flex-1">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -162,16 +132,6 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* AGIOT Digital Farming */}
           <div className="rounded-2xl overflow-hidden border border-[#3b8dc0]/20 shadow-sm hover:shadow-md transition-shadow bg-white flex flex-col">
-            {/* Figma: field scene with wind turbines */}
-            <div className="w-full h-48 overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand/figma/1a4a9c3e2d8e_438x338.png"
-                alt="AGIOT connected farming"
-                className="w-full h-full object-cover object-top"
-                loading="lazy"
-              />
-            </div>
             <div className="p-6 flex flex-col flex-1">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

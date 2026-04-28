@@ -37,11 +37,19 @@ const icons = [
 ]
 
 const accentColors = ['#1a6eb5', '#75a74d', '#3b8dc0', '#2e9e6b']
+// Lighter versions for text readability on the dark Platform background
+const textColors = ['#7ab5e0', '#a3d46a', '#7ab5e0', '#5dc99a']
 const badgeColors: Record<string, string> = {
   Live: '#2e9e6b',
   'En vivo': '#2e9e6b',
   'Coming Soon': '#1a6eb5',
   Proximamente: '#1a6eb5',
+}
+const badgeTextColors: Record<string, string> = {
+  Live: '#5dc99a',
+  'En vivo': '#5dc99a',
+  'Coming Soon': '#7ab5e0',
+  Proximamente: '#7ab5e0',
 }
 
 export default function Platform({ dict }: PlatformProps) {
@@ -87,7 +95,9 @@ export default function Platform({ dict }: PlatformProps) {
           {dict.platform.items.map((item, i) => {
             const isComingSoon = item.badge === 'Coming Soon' || item.badge === 'Proximamente'
             const badgeColor = badgeColors[item.badge] ?? '#1a6eb5'
+            const badgeText = badgeTextColors[item.badge] ?? '#7ab5e0'
             const accent = accentColors[i]
+            const textColor = textColors[i]
 
             return (
               <div
@@ -102,7 +112,7 @@ export default function Platform({ dict }: PlatformProps) {
                 {/* Badge */}
                 <span
                   className="inline-flex items-center gap-1.5 text-xs font-bold rounded-full px-3 py-1 mb-5"
-                  style={{ background: `${badgeColor}22`, color: badgeColor, border: `1px solid ${badgeColor}44` }}
+                  style={{ background: `${badgeColor}22`, color: badgeText, border: `1px solid ${badgeColor}44` }}
                 >
                   {!isComingSoon && (
                     <span
@@ -121,7 +131,7 @@ export default function Platform({ dict }: PlatformProps) {
                   {icons[i]}
                 </div>
 
-                <h3 className="text-xl font-black mb-3" style={{ color: accent }}>{item.title}</h3>
+                <h3 className="text-xl font-black mb-3" style={{ color: textColor }}>{item.title}</h3>
                 <p className="text-slate-300 leading-relaxed text-sm mb-5">{item.desc}</p>
 
                 {/* Detail line */}
@@ -129,7 +139,7 @@ export default function Platform({ dict }: PlatformProps) {
                   className="text-xs font-mono px-3 py-2 rounded-lg"
                   style={{
                     background: `${accent}12`,
-                    color: `${accent}cc`,
+                    color: textColor,
                     border: `1px solid ${accent}22`,
                   }}
                 >
@@ -154,7 +164,7 @@ export default function Platform({ dict }: PlatformProps) {
         <div className="mt-16 rounded-2xl overflow-hidden border border-white/10">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <div className="p-8 lg:p-10 flex flex-col justify-center">
-              <p className="text-[#75a74d] text-xs font-bold tracking-widest uppercase mb-3">
+              <p className="text-[#a3d46a] text-xs font-bold tracking-widest uppercase mb-3">
                 All-in-One Infrastructure
               </p>
               <h3 className="text-2xl font-black text-white mb-4">

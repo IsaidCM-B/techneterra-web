@@ -5,6 +5,7 @@ import Platform from '@/components/Platform'
 import Mission from '@/components/Mission'
 import CaseStudyTeaser from '@/components/CaseStudyTeaser'
 import ContactSection from '@/components/ContactSection'
+import PhotoGallery from '@/components/PhotoGallery'
 import Link from 'next/link'
 import { getDictionary, hasLocale } from './dictionaries'
 import { notFound } from 'next/navigation'
@@ -170,6 +171,7 @@ export default async function HomePage({
 
       <Platform dict={dict} />
       <Mission dict={dict} />
+      <PhotoGallery title="Field Operations" subtitle="TTR robots working at scale — real field data, real results." />
       <CaseStudyTeaser dict={dict} lang={lang} />
       <ContactSection dict={dict} lang={lang} />
     </>

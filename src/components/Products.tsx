@@ -45,9 +45,23 @@ export default function Products({ dict, lang }: ProductsProps) {
 
         {/* Flagship TTR-500E — wide card */}
         <div className="mb-8 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-[#0d1e3c] to-[#1a3a6a] text-white">
-          <div className="grid grid-cols-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            {/* Field photo */}
+            <div className="relative h-64 lg:h-auto min-h-[300px] order-2 lg:order-1">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/ttr500e-field.jpg"
+                alt="TTR-500E operating in field"
+                className="absolute inset-0 w-full h-full object-cover object-center"
+              />
+              <div
+                className="absolute inset-0"
+                style={{ background: 'linear-gradient(to right, transparent 60%, rgba(13,30,60,0.9) 100%)' }}
+                aria-hidden
+              />
+            </div>
             {/* Copy */}
-            <div className="p-8 lg:p-12 flex flex-col justify-center">
+            <div className="p-8 lg:p-12 flex flex-col justify-center order-1 lg:order-2">
               <span className="inline-flex items-center gap-2 text-[#8ec96a] text-xs font-bold tracking-widest uppercase mb-3">
                 <span className="h-1.5 w-1.5 rounded-full bg-[#8ec96a] animate-pulse" />
                 Flagship · 28 kW Full Electric
@@ -96,6 +110,13 @@ export default function Products({ dict, lang }: ProductsProps) {
 
           {/* TTR-300E */}
           <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow bg-slate-50 flex flex-col">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/ttr500e-render.jpg"
+              alt="TTR-300E render"
+              className="w-full h-48 object-cover object-center"
+              loading="lazy"
+            />
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-xl font-black mb-1">{dict.products.ttr300.name}</h3>
               <p className="text-[#3b8dc0] font-semibold text-sm mb-3">{dict.products.ttr300.tagline}</p>
